@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^video$ video.php [QSA,PT,L]
+RewriteRule ^book$ book.php [QSA,PT,L]
+RewriteRule ^cajon$ cajon.php [QSA,PT,L]
+RewriteRule ^bbs$ bbs.php [QSA,PT,L]
+</IfModule>
+
